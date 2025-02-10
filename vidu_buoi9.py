@@ -213,7 +213,7 @@ with open('data.json') as file:
 print(data)
 
 # Ví dụ trang 38: Lấy dữ liệu từ API
-import requests
+import requests # type: ignore
 import pandas as pd
 
 # Gọi API lấy dữ liệu
@@ -227,7 +227,7 @@ df = pd.DataFrame(data)
 print(df.head())
 
 # Ví dụ trang 39: Gửi request với tham số
-import requests
+import requests # type: ignore
 
 # Gửi request với tham số
 params = {'q': 'python'}
@@ -237,7 +237,7 @@ response = requests.get('https://api.github.com/search/repositories', params=par
 print(response.json())
 
 # Ví dụ trang 45: Kết nối MongoDB
-from pymongo import MongoClient
+from pymongo import MongoClient # type: ignore
 
 # Kết nối MongoDB
 client = MongoClient("mongodb://localhost:27017/")
@@ -248,7 +248,7 @@ print(db.list_collection_names())
 
 # Ví dụ trang 46: Chuyển dữ liệu MongoDB sang DataFrame
 import pandas as pd
-from pymongo import MongoClient
+from pymongo import MongoClient # type: ignore
 
 # Kết nối MongoDB
 client = MongoClient("mongodb://localhost:27017/")
@@ -265,7 +265,7 @@ df = pd.DataFrame(data)
 print(df.head())
 
 # Ví dụ trang 51: Sử dụng Sklearn để lấy dataset
-from sklearn.datasets import load_iris
+from sklearn.datasets import load_iris # type: ignore
 import pandas as pd
 
 # Lấy dữ liệu iris
@@ -276,7 +276,7 @@ df = pd.DataFrame(data.data, columns=data.feature_names)
 print(df.head())
 
 # Ví dụ trang 60: Tạo dataset phân lớp
-from sklearn.datasets import make_classification
+from sklearn.datasets import make_classification # type: ignore
 
 # Tạo dataset
 X, y = make_classification(n_samples=100, n_features=5, random_state=42)
@@ -285,7 +285,7 @@ X, y = make_classification(n_samples=100, n_features=5, random_state=42)
 print(X[:5])
 
 #  Trang 61: Tạo Dữ Liệu Mẫu cho Bài Toán Hồi Quy 
-from sklearn.datasets import make_regression
+from sklearn.datasets import make_regression # type: ignore
 import matplotlib.pyplot as plt
 
 # Tạo dữ liệu hồi quy
@@ -299,7 +299,7 @@ plt.ylabel('Target')
 plt.show()
 
 # Trang 62: Tạo Dữ Liệu Mẫu cho Bài Toán Phân Cụm
-from sklearn.datasets import make_blobs
+from sklearn.datasets import make_blobs # type: ignore
 import matplotlib.pyplot as plt
 
 # Tạo dữ liệu phân cụm

@@ -39,7 +39,7 @@ print(df.head())
 
 #  Bài 2.4 (Trang 34): Đọc dữ liệu từ API
 import pandas as pd
-import requests
+import requests # type: ignore
 
 # URL API mẫu (có thể thay bằng API khác)
 url = "https://jsonplaceholder.typicode.com/posts"
@@ -55,7 +55,7 @@ df = pd.DataFrame(data)
 print(df.head())
 
 # Bài 2.5 (Trang 41): Đọc dữ liệu từ MongoDB
-from pymongo import MongoClient
+from pymongo import MongoClient # type: ignore
 import pandas as pd
 
 # Kết nối MongoDB
@@ -97,7 +97,7 @@ df['column_name'] = df['column_name'].str.lower()
 print(df.head())
 
 # Bài 5.1 (Trang 56): Tạo tập dữ liệu mẫu với sklearn
-from sklearn.datasets import make_classification
+from sklearn.datasets import make_classification # type: ignore
 import pandas as pd
 
 # Tạo dữ liệu
